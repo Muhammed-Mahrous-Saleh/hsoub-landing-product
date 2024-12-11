@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: cairo, sans-serif;
+    caret-color: #a044ff;
+    max-width: 100%;
+}
+
+body > * {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: cairo;
+    src: url("../fonts/Cairo-Regular.ttf");
+}
+
+header video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+header .overlay .brand {
+    padding-top: 40px;
+}
+
+header .header-text {
+    padding-top: 190px;
+}
+
+header .header-text h1 {
+    font-size: 36px;
+    margin-bottom: 46px;
+    line-height: 46px;
+}
+
+header .header-text p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #5d5d5d;
+    margin-bottom: 50px;
+}
+
+header .header-button a.btn {
+    padding: 22px 55px;
+    margin-left: 15px;
+    background-color: #7936b2;
+    color: white;
+    border: none !important;
+}
+
+header .header-button a.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #7836b275;
+}
+
+header .header-button a.btn:last-child {
+    background-color: transparent;
+    color: #7936b2;
+}
+
+.product {
+    position: relative;
+}
+
+.product .product-label {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+.product .product-label p {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    transform: translate(47%, -74%);
+}
+
+.product .product-label p span {
+    display: block;
+}
+
+.product .product-img img {
+    width: 100%;
+}
+
+section.features {
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+section.features .features-title h2 {
+    font-size: 36px;
+    color: #555;
+    line-height: 32px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+section.features .features-title h2::after {
+    content: "";
+    height: 2px;
+    width: 150px;
+    background-color: #743e9a;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.media-features > div {
+    padding: 70px 0;
+}
+
+.media-features > div:not(:last-child) {
+    border-bottom: 3px solid #eee;
+}
+
+.media-features > div:nth-child(even) {
+    direction: ltr;
+}
+
+.media-features > div img {
+    margin: 0 80px;
+}
+
+.media-features > div h4 {
+    font-size: 36px;
+    color: #6a3093;
+    font-weight: bold;
+    padding: 0 25px;
+    margin-bottom: 50px;
+    border: 0px solid #6a3093;
+    border-right-width: 3px;
+}
+
+.media-features > div:nth-child(even) h4 {
+    border-right-width: 0px;
+    border-left-width: 3px;
+}
+
+.media-features > div p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #555;
+}
+
+section.prices {
+    padding: 50px 0 60px;
+    background-color: #f7f7f7;
+}
+
+section.prices .plan-card {
+    background-color: #fff;
+    border: 2px solid #ededed;
+    padding: 15px 0;
+    margin-top: 100px;
+    color: #acacac;
+}
+
+@media screen and (max-width: 991px) {
+    section.prices .plan-card {
+        margin-top: 55px;
+    }
+}
+
+section.prices .plan-card .title {
+    font-size: 18px;
+    color: #a044ff;
+}
+
+section.prices .plan-card h5 {
+    font-size: 48px;
+    margin: 30px auto;
+}
+
+section.prices .plan-card h5 span {
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+section.prices .plan-card ul li {
+    font-size: 15px;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+section.prices .row > div:nth-child(3) .plan-card {
+    padding-top: 30px;
+    margin-top: 55px;
+}
+
+section.prices .plan-card ul + a {
+    border: 2px solid #7233a2;
+    background-color: #fff;
+    color: #7233a2;
+    padding: 10px 40px;
+    border-radius: 0;
+    transition: 0.5s all ease;
+}
+
+section.prices .plan-card ul + a:hover,
+section.prices .row > div:nth-child(3) .plan-card ul + a {
+    background-color: #7233a2;
+    color: #fff;
+}
+
+section.faq {
+    padding: 55px 0;
+    background-color: #fff;
+}
+
+section.faq .faq-title h2 {
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 55px;
+}
+
+section.faq .accordion .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+}
+
+section.faq .accordion .accordion-item button {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
+
+section.faq .accordion-button:not(.collapsed) {
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+section.faq .accordion-button:focus {
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+section.videos {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+section.videos #video {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section.videos .overlay {
+    background-color: rgba(130, 77, 178, 0.9);
+    min-height: 100%;
+    position: absolute;
+    inset: 0;
+}
+
+section.videos .overlay button {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    font-size: 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    transform: translate(50%, 50%);
+}
+
+section.videos .overlay button i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto 45px;
+}
+
+section.contact {
+    padding: 60px 0 40px;
+    background-color: #131313;
+}
+
+section.contact h4 {
+    font-size: 18px;
+    color: #758594;
+    line-height: 50px;
+}
+
+section.contact form input,
+section.contact form textarea {
+    display: block;
+    margin-bottom: 25px;
+    background-color: #242424;
+    font-size: 18px;
+    line-height: 35px;
+    color: #aeadad !important;
+    border: none;
+    text-align: right;
+    width: 90%;
+}
+
+section.contact form input::placeholder,
+section.contact form textarea::placeholder {
+    color: #758594;
+    opacity: 1;
+}
+
+section.contact form input:focus,
+section.contact form textarea:focus {
+    background-color: #242424;
+    box-shadow: 0 0 0 0.25rem rgba(130, 77, 178, 0.25);
+}
+
+section.contact form button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #a044ff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+section.contact form button i {
+    padding-right: 15px;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+
+section.contact form button:hover i {
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+section.contact form .invalid-feedback {
+    margin-top: -26px;
+    margin-bottom: 5px;
+}
+
+section.contact .blog {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+section.contact .blog a.blog-link {
+    text-decoration: none;
+}
+
+section.contact .blog h5 {
+    font-size: 18px;
+    color: #aeadad;
+    margin-bottom: 15px;
+}
+
+section.contact .blog p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
+}
+
+footer {
+    background-color: #1d1d1d;
+    padding: 25px 0;
+}
+
+footer .social-icons li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #1d1d1d;
+    background-color: #758594;
+    text-align: center;
+    display: block;
+    transition: 0.3s;
+}
+
+footer .social-icons li a:hover {
+    background-color: #a044ff;
+}
+
+footer .copyright p {
+    text-align: left;
+    font-size: 15px;
+    color: #919191;
+}
+
+@media (max-width: 992px) {
+    header .header-text {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .overlay .product {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .product .product-label {
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    section.features .media-features .d-flex {
+        flex-flow: column;
+        text-align: center;
+    }
+
+    section.features .media-features .d-flex img {
+        margin: 0px auto 50px;
+    }
+
+    section.features .media-features .d-flex h4 {
+        border: none !important;
+    }
+
+    section.contact h4 {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .copyright p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1199px) {
+    header .overlay .header-button {
+        margin-bottom: 50px;
+    }
+}
