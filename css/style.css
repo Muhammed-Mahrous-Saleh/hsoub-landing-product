@@ -271,6 +271,7 @@ section.videos .overlay {
     min-height: 100%;
     position: absolute;
     inset: 0;
+    transition: 0.5s all ease;
 }
 
 section.videos .overlay button {
@@ -282,6 +283,7 @@ section.videos .overlay button {
     background-color: transparent;
     border: 0;
     transform: translate(50%, 50%);
+    transition: 0.5s all ease;
 }
 
 section.videos .overlay button i {
